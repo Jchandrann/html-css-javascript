@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>basic tags</title>
+	<link type="text/javascript" href="Ex4Script">  
+</head>
+<body>
+<script type="text/javascript">
+function getBrowserDetails() {
+	var name="browser name :"+navigator.appName;
+	name=name+"<br/> javaEnabled :"+navigator.javaEnabled();
+	name=name+"<br/> taintEnabled :"+navigator.taintEnabled();
+	name=name+,"<br/> to fetch url:"+ window.location.href;
+	document.getElementById("navigatorproperties").innerHTML=name;
+}	
+</script>
+<script type="text/javascript">
+	function display()
+	{
+		var uid=document.getElementById("userId").value;
+         document.getElementById("username").innerHTML="hi "+uid;
+         document.getElementById("userId").value="sanju";
+	}
+</script>
+</body>
+
+<h1 id="username">basic tags</h1
+<form id="userlogin">
+username:<input type="text" name="username" id="userId">
+
+</form>
+
+<p >this is basic <br>paragraph</p> <!-- basic tag explanation -->
+<hr>this is <mark style="color:yellow1">horizontal</mark> rule</hr>
+<button onclick="display()"><br/>click to browser details</button>
+<p id="navigatorproperties">navigator properties will replace here</p>
+</body>
+</body>
+</html>
